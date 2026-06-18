@@ -5,6 +5,8 @@ import { HealthModule } from './modules/health/health.module';
 import { NotificationsModule } from './modules/notifications/notifications.module';
 import { ReportingModule } from './modules/reporting/reporting.module';
 import { DependencyTrackerModule } from './modules/contracts/dependencies/dependency-tracker.module';
+import { SiemModule } from './integrations/siem/siem.module';
+import { ChainsModule } from './modules/chains/chains.module';
 
 @Module({
   imports: [
@@ -13,6 +15,8 @@ import { DependencyTrackerModule } from './modules/contracts/dependencies/depend
     NotificationsModule,
     ReportingModule,
     DependencyTrackerModule,
+    SiemModule,
+    ChainsModule,
   ],
   controllers: [AppController],
 })
